@@ -1,0 +1,93 @@
+/* Import das fontes elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+
+  --bg-light: #fcefea;
+  --rose: #e6a8bb;
+  --gold: #d4af37;
+  --text-dark: #3a2f2f;
+}
+
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 2rem 1rem;
+  line-height: 1.6;
+}
+
+/* Cabeçalhos refinados */
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--rose);
+}
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Parágrafo centralizado e elegante */
+p {
+  font-size: 1.05rem;
+  max-width: 45em;
+  margin: 0 auto 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Container da galeria em grid responsivo */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Estilo das imagens com hover sutil */
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(20%);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* Versão mobile otimizada */
+@media (max-width: 480px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.4rem; }
+}
+p {
+  text-align: center;
+}
+hr {
+  height: 1px;
+  color: rgb(255, 164, 250);
+  background: rgb(252, 154, 187);
+  font-size: 0;
+  border: 0;
+}
+

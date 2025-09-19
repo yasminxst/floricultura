@@ -1,0 +1,105 @@
+/* Import das fontes elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Allura&display=swap');
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --font-script: 'Allura', cursive;
+
+  --bg-light: #fcefea;
+  --bg-accent: #fdeaf0;
+  --rose: #e6a8bb;
+  --gold: #d4af37;
+  --text-dark: #3a2f2f;
+}
+
+/* Reset básico e base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Cabeçalhos refinados */
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--rose);
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+/* Lista de categorias */
+ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+ul li {
+  margin: 0.5rem;
+}
+
+/* Separador suave */
+hr {
+  width: 50%;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid var(--rose);
+}
+
+/* Promoção especial */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+del {
+  color: var(--text-dark);
+  opacity: 0.6;
+}
+.promo-valor {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gold);
+  font-family: var(--font-heading);
+}
+
+/* Rodapé e detalhes finais */
+footer {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+footer span {
+  font-family: var(--font-script);
+  color: var(--rose);
+}
+/* Importar fonte elegante se necessário */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+p {
+  font-family: 'Lora', serif;         /* Fonte sofisticada e legível */
+  font-size: 1rem;                    /* Tamanho confortável de leitura */
+  line-height: 1.5;                   /* Espaçamento ideal entre linhas */
+  max-width: 45em;                    /* Aproximadamente 540px; mantém 50-75 caracteres por linha */
+  margin: 1rem auto;                  /* Espaçamento vertical e centralização */
+  color: #3a2f2f;                      /* Cor escura suave e elegante */
+
+  /* Justificação com controle */
+  text-align: justify;
+  text-justify: inter-word;           /* Garante distribuição equilibrada entre palavras */
+}
+
+
+

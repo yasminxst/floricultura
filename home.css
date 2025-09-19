@@ -1,0 +1,98 @@
+/* Import das fontes elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Allura&display=swap');
+
+:root {
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+  --font-script: 'Allura', cursive;
+
+  --bg-light: #fcefea;
+  --bg-accent: #fdeaf0;
+  --rose: #e6a8bb;
+  --gold: #d4af37;
+  --text-dark: #3a2f2f;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  text-align: center;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* Cabeçalhos */
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--rose);
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+/* Parágrafos */
+p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  max-width: 45em;
+  margin: 1rem auto;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--text-dark);
+}
+
+/* Linha divisória */
+hr {
+  width: 50%;
+  margin: 2rem auto;
+  border: none;
+  border-top: 1px solid var(--rose);
+}
+
+/* Lista de destaques */
+ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+}
+
+/* Botão elegante */
+a.botao {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  background-color: var(--rose);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+a.botao:hover {
+  background-color: var(--gold);
+  color: var(--text-dark);
+  transform: scale(1.05);
+}
